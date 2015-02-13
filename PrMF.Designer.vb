@@ -322,7 +322,7 @@
         Me.IPathT.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.IPathT.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPathT.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.IPathT.Location = New System.Drawing.Point(356, 363)
+        Me.IPathT.Location = New System.Drawing.Point(367, 383)
         Me.IPathT.MaxLength = 0
         Me.IPathT.Name = "IPathT"
         Me.IPathT.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -511,7 +511,7 @@
         Me.PathT.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.PathT.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PathT.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.PathT.Location = New System.Drawing.Point(122, 363)
+        Me.PathT.Location = New System.Drawing.Point(133, 383)
         Me.PathT.MaxLength = 0
         Me.PathT.Name = "PathT"
         Me.PathT.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -572,7 +572,7 @@
         Me.List2.Font = New System.Drawing.Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.List2.ForeColor = System.Drawing.SystemColors.WindowText
         Me.List2.ItemHeight = 14
-        Me.List2.Location = New System.Drawing.Point(256, 392)
+        Me.List2.Location = New System.Drawing.Point(267, 415)
         Me.List2.Name = "List2"
         Me.List2.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.List2.Size = New System.Drawing.Size(184, 88)
@@ -585,7 +585,7 @@
         Me.List1.Font = New System.Drawing.Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.List1.ForeColor = System.Drawing.SystemColors.WindowText
         Me.List1.ItemHeight = 14
-        Me.List1.Location = New System.Drawing.Point(69, 392)
+        Me.List1.Location = New System.Drawing.Point(80, 415)
         Me.List1.Name = "List1"
         Me.List1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.List1.Size = New System.Drawing.Size(184, 88)
@@ -726,7 +726,7 @@
         Me.Command1.Cursor = System.Windows.Forms.Cursors.Default
         Me.Command1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Command1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Command1.Location = New System.Drawing.Point(2, 278)
+        Me.Command1.Location = New System.Drawing.Point(2, 282)
         Me.Command1.Name = "Command1"
         Me.Command1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Command1.Size = New System.Drawing.Size(433, 32)
@@ -818,7 +818,7 @@
         Me._Label1_13.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._Label1_13.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label1.SetIndex(Me._Label1_13, CType(13, Short))
-        Me._Label1_13.Location = New System.Drawing.Point(205, 365)
+        Me._Label1_13.Location = New System.Drawing.Point(216, 385)
         Me._Label1_13.Name = "_Label1_13"
         Me._Label1_13.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me._Label1_13.Size = New System.Drawing.Size(145, 18)
@@ -885,7 +885,7 @@
         Me._Label1_12.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._Label1_12.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label1.SetIndex(Me._Label1_12, CType(12, Short))
-        Me._Label1_12.Location = New System.Drawing.Point(-6, 365)
+        Me._Label1_12.Location = New System.Drawing.Point(5, 385)
         Me._Label1_12.Name = "_Label1_12"
         Me._Label1_12.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me._Label1_12.Size = New System.Drawing.Size(122, 18)
@@ -930,7 +930,7 @@
         Me._Label1_9.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._Label1_9.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label1.SetIndex(Me._Label1_9, CType(9, Short))
-        Me._Label1_9.Location = New System.Drawing.Point(5, 443)
+        Me._Label1_9.Location = New System.Drawing.Point(16, 449)
         Me._Label1_9.Name = "_Label1_9"
         Me._Label1_9.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me._Label1_9.Size = New System.Drawing.Size(58, 18)
@@ -945,10 +945,10 @@
         Me._Label2_2.Font = New System.Drawing.Font("FermiLgo", 17.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._Label2_2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Label2.SetIndex(Me._Label2_2, CType(2, Short))
-        Me._Label2_2.Location = New System.Drawing.Point(341, 48)
+        Me._Label2_2.Location = New System.Drawing.Point(355, 53)
         Me._Label2_2.Name = "_Label2_2"
         Me._Label2_2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me._Label2_2.Size = New System.Drawing.Size(30, 20)
+        Me._Label2_2.Size = New System.Drawing.Size(41, 20)
         Me._Label2_2.TabIndex = 39
         Me._Label2_2.Text = "f"
         '
@@ -1135,7 +1135,7 @@
         Me._Label1_17.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._Label1_17.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label1.SetIndex(Me._Label1_17, CType(17, Short))
-        Me._Label1_17.Location = New System.Drawing.Point(147, 312)
+        Me._Label1_17.Location = New System.Drawing.Point(147, 323)
         Me._Label1_17.Name = "_Label1_17"
         Me._Label1_17.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me._Label1_17.Size = New System.Drawing.Size(129, 18)
@@ -1150,7 +1150,7 @@
         Me.RunNumL.Cursor = System.Windows.Forms.Cursors.Default
         Me.RunNumL.Font = New System.Drawing.Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RunNumL.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.RunNumL.Location = New System.Drawing.Point(278, 310)
+        Me.RunNumL.Location = New System.Drawing.Point(278, 322)
         Me.RunNumL.Name = "RunNumL"
         Me.RunNumL.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.RunNumL.Size = New System.Drawing.Size(154, 18)
@@ -1164,7 +1164,7 @@
         Me._Label1_18.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._Label1_18.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label1.SetIndex(Me._Label1_18, CType(18, Short))
-        Me._Label1_18.Location = New System.Drawing.Point(-8, 338)
+        Me._Label1_18.Location = New System.Drawing.Point(3, 354)
         Me._Label1_18.Name = "_Label1_18"
         Me._Label1_18.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me._Label1_18.Size = New System.Drawing.Size(129, 18)
@@ -1179,7 +1179,7 @@
         Me.RunFileL.Cursor = System.Windows.Forms.Cursors.Default
         Me.RunFileL.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RunFileL.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.RunFileL.Location = New System.Drawing.Point(125, 331)
+        Me.RunFileL.Location = New System.Drawing.Point(136, 347)
         Me.RunFileL.Name = "RunFileL"
         Me.RunFileL.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.RunFileL.Size = New System.Drawing.Size(309, 30)

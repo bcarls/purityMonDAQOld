@@ -3001,4 +3001,32 @@ cmdGetWFMErr1:
             Exit Sub
         End If
     End Sub
+
+    Private Sub _Label1_9_Click(sender As Object, e As EventArgs) Handles _Label1_9.Click
+
+    End Sub
+
+    Private Sub List2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles List2.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub List1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles List1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub _Label1_18_Click(sender As Object, e As EventArgs) Handles _Label1_18.Click
+
+    End Sub
+
+    Private Sub RunFileL_Click(sender As Object, e As EventArgs) Handles RunFileL.Click
+
+    End Sub
+
+    Private Sub _Label1_12_Click(sender As Object, e As EventArgs) Handles _Label1_12.Click
+
+    End Sub
+
+    Private Sub _Label1_13_Click(sender As Object, e As EventArgs) Handles _Label1_13.Click
+
+    End Sub
 End Class

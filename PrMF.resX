@@ -112,38 +112,35 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>129, 17</value>
   </metadata>
-  <metadata name="PrintForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="PrintForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="Check4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="Check4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>108, 56</value>
   </metadata>
-  <metadata name="Check3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="Check3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 56</value>
   </metadata>
-  <metadata name="Check2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="Check2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>879, 17</value>
   </metadata>
-  <metadata name="Check1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>788, 17</value>
-  </metadata>
-  <metadata name="Label1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="Label1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>199, 56</value>
   </metadata>
-  <metadata name="Label2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="Label2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>286, 56</value>
   </metadata>
   <data name="PrintForm1.PrinterSettings" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACdTeXN0ZW0uRHJh
         d2luZy5QcmludGluZy5QcmludGVyU2V0dGluZ3MSAAAAC3ByaW50ZXJOYW1lCmRyaXZlck5hbWUKb3V0
         cHV0UG9ydAtwcmludFRvRmlsZRRwcmludERpYWxvZ0Rpc3BsYXllZApleHRyYWJ5dGVzCWV4dHJhaW5m
@@ -163,26 +160,31 @@
         aW5nLlByaW50aW5nLlBhcGVyU291cmNlAgAAAClTeXN0ZW0uRHJhd2luZy5QcmludGluZy5QcmludGVy
         UmVzb2x1dGlvbgIAAAAgU3lzdGVtLkRyYXdpbmcuUHJpbnRpbmcuVHJpU3RhdGUCAAAAH1N5c3RlbS5E
         cmF3aW5nLlByaW50aW5nLk1hcmdpbnMCAAAAAgAAAAkBAAAAAff////7////AAoKCgH2////+////wAJ
-        CwAAAAULAAAAH1N5c3RlbS5EcmF3aW5nLlByaW50aW5nLk1hcmdpbnMEAAAABGxlZnQFcmlnaHQDdG9w
-        BmJvdHRvbQAAAAAICAgIAgAAAGQAAABkAAAAZAAAAGQAAAAL
+        CwAAAAULAAAAH1N5c3RlbS5EcmF3aW5nLlByaW50aW5nLk1hcmdpbnMIAAAABGxlZnQFcmlnaHQDdG9w
+        BmJvdHRvbQpkb3VibGVMZWZ0C2RvdWJsZVJpZ2h0CWRvdWJsZVRvcAxkb3VibGVCb3R0b20AAAAAAAAA
+        AAgICAgGBgYGAgAAAGQAAABkAAAAZAAAAGQAAAAAAAAAAABZQAAAAAAAAFlAAAAAAAAAWUAAAAAAAABZ
+        QAs=
 </value>
   </data>
-  <metadata name="HVWait.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="HVWait.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>228, 17</value>
   </metadata>
-  <metadata name="OKWait.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="OKWait.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>321, 17</value>
   </metadata>
-  <metadata name="PulserWait.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="PulserWait.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>414, 17</value>
   </metadata>
-  <metadata name="ScopeWait.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="ScopeWait.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>523, 17</value>
   </metadata>
-  <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>633, 17</value>
   </metadata>
-  <metadata name="Hz.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="Hz.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>722, 17</value>
+  </metadata>
+  <metadata name="Check1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>788, 17</value>
   </metadata>
 </root>

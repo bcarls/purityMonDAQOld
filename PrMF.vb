@@ -122,63 +122,20 @@ Friend Class PrMF '
 
 
 
-    'UPGRADE_WARNING: Event Combo1.TextChanged may fire when form is initialized. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-    'UPGRADE_WARNING: ComboBox event Combo1.Change was upgraded to Combo1.TextChanged which has a new behavior. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="DFCDE711-9694-47D7-9C50-45A99CD8E91E"'
-    Private Sub Combo1_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Combo1.TextChanged
-        ' InputRangeIdChA = CInt(VB6.GetItemString(Combo1, Combo1.SelectedIndex))
-        InputRangeIdChA = VB6.GetItemData(Combo1, Combo1.SelectedIndex)
 
-        Dim systemID As Object
-        Dim boardID As Integer
-        Dim boardHandle As Integer
-        'UPGRADE_WARNING: Couldn't resolve default property of object systemID. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-        systemID = 1
-        boardID = 1
-        'UPGRADE_WARNING: Couldn't resolve default property of object systemID. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-        boardHandle = AlazarGetBoardBySystemID(systemID, boardID)
-        Dim result As Boolean
-        result = ConfigureBoard(boardHandle)
-        If (result <> True) Then
-            Exit Sub
-        End If
-    End Sub
-
-    'UPGRADE_WARNING: Event Combo2.TextChanged may fire when form is initialized. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'
-    'UPGRADE_WARNING: ComboBox event Combo2.Change was upgraded to Combo2.TextChanged which has a new behavior. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="DFCDE711-9694-47D7-9C50-45A99CD8E91E"'
-    Private Sub Combo2_TextChanged(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Combo2.TextChanged
-        'InputRangeIdChB = CInt(VB6.GetItemString(Combo2, Combo2.SelectedIndex))
-        InputRangeIdChB = VB6.GetItemData(Combo2, Combo2.SelectedIndex)
-
-        Dim systemID As Object
-        Dim boardID As Integer
-        Dim boardHandle As Integer
-        'UPGRADE_WARNING: Couldn't resolve default property of object systemID. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-        systemID = 1
-        boardID = 1
-        'UPGRADE_WARNING: Couldn't resolve default property of object systemID. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-        boardHandle = AlazarGetBoardBySystemID(systemID, boardID)
-        Dim result As Boolean
-        result = ConfigureBoard(boardHandle)
-        If (result <> True) Then
-            Exit Sub
-        End If
-    End Sub
 
     Private Sub Command1_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Command1.Click
-        NullCmd.Focus()
         If iRunning = 1 Then Exit Sub
         If Command1.Text = "DAQ Stopped - Press to Start DAQ" Then
             Command1.Text = "DAQ Running - Press to Stop"
             StatusL.Text = "DAQ Started"
             xRate = 1 'cause to do one right now
-            NullCmd.Focus()
             FileOpen(88, DataFileNameHist, OpenMode.Append)
             PrintLine(88, "+++++++" & Today & " " & TimeOfDay & " DAQ Started")
             FileClose(88)
         Else
             Command1.Text = "DAQ Stopped - Press to Start DAQ"
             StatusL.Text = "DAQ Stopped"
-            NullCmd.Focus()
             FileOpen(88, DataFileNameHist, OpenMode.Append)
             PrintLine(88, "-------" & Today & " " & TimeOfDay & " DAQ Stopped")
             FileClose(88)
@@ -199,17 +156,14 @@ Friend Class PrMF '
     '	FileOpen(3, xPath & "Run_num.ini", OpenMode.Output)
     '	PrintLine(3, iiRun)
     '	FileClose(3)
-    '	RunNumL.Text = VB6.Format(iiRun, "######")
-    '	DataFileName = DataFilePath & "Run_" & VB6.Format(iiRun, "000000") & ".txt"
+    '	RunNumL.Text = Format(iiRun, "######")
+    '	DataFileName = DataFilePath & "Run_" & Format(iiRun, "000000") & ".txt"
     '	RunFileL.Text = DataFileName
     '	'ScopeWait.Enabled = True
     '	Out(Val("&H37a"), 0)
 
     'End Sub
 
-    Private Sub Command3_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Command3.Click
-        Me.PrintForm1.Print(Me, PowerPacks.Printing.PrintForm.PrintOption.CompatibleModeClientAreaOnly)
-    End Sub
 
 
 
@@ -271,7 +225,7 @@ Friend Class PrMF '
         'Out Val("&H" + Text1.Text), Val(Text2.Text)
         'End Sub
         'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-        zztime = VB6.Format(TimeOfDay, "hh:mm:ss")
+        zztime = Format(TimeOfDay, "hh:mm:ss")
         '''''''''''''''''''''''''''''''
         'LogPath = "E:\"
         'LogPath = "C:\TJTest\"
@@ -359,42 +313,82 @@ Friend Class PrMF '
         List1.Height = VB6.TwipsToPixelsY(1620)
         List2.Height = VB6.TwipsToPixelsY(1820)
 
-
-
-        Combo1.Items.Add(New VB6.ListBoxItem("+/- 40 mV", INPUT_RANGE_PM_40_MV))
-        Combo1.Items.Add(New VB6.ListBoxItem("+/- 50 mV", INPUT_RANGE_PM_50_MV))
-        Combo1.Items.Add(New VB6.ListBoxItem("+/- 80 mV", INPUT_RANGE_PM_80_MV))
-        Combo1.Items.Add(New VB6.ListBoxItem("+/- 100 mV", INPUT_RANGE_PM_100_MV))
-        Combo1.Items.Add(New VB6.ListBoxItem("+/- 200 mV", INPUT_RANGE_PM_200_MV))
-        Combo1.Items.Add(New VB6.ListBoxItem("+/- 400 mV", INPUT_RANGE_PM_400_MV))
-        Combo1.Items.Add(New VB6.ListBoxItem("+/- 500 mV", INPUT_RANGE_PM_500_MV))
-        Combo1.Items.Add(New VB6.ListBoxItem("+/- 800 mV", INPUT_RANGE_PM_800_MV))
-        Combo1.Items.Add(New VB6.ListBoxItem("+/- 1 V", INPUT_RANGE_PM_1_V))
-        Combo1.Items.Add(New VB6.ListBoxItem("+/- 2 V", INPUT_RANGE_PM_2_V))
-        Combo1.Items.Add(New VB6.ListBoxItem("+/- 4 V", INPUT_RANGE_PM_4_V))
-        Combo1.Items.Add(New VB6.ListBoxItem("+/- 5 V", INPUT_RANGE_PM_5_V))
-        Combo1.Items.Add(New VB6.ListBoxItem("+/- 8 V", INPUT_RANGE_PM_8_V))
-        Combo1.Items.Add(New VB6.ListBoxItem("+/- 10 V", INPUT_RANGE_PM_10_V))
-        Combo1.Items.Add(New VB6.ListBoxItem("+/- 20 V", INPUT_RANGE_PM_20_V))
+        With Combo1
+            .Items.Add(New MyList("+/- 40 mV", INPUT_RANGE_PM_40_MV))
+            .Items.Add(New MyList("+/- 50 mV", INPUT_RANGE_PM_50_MV))
+            .Items.Add(New MyList("+/- 80 mV", INPUT_RANGE_PM_80_MV))
+            .Items.Add(New MyList("+/- 100 mV", INPUT_RANGE_PM_100_MV))
+            .Items.Add(New MyList("+/- 200 mV", INPUT_RANGE_PM_200_MV))
+            .Items.Add(New MyList("+/- 400 mV", INPUT_RANGE_PM_400_MV))
+            .Items.Add(New MyList("+/- 500 mV", INPUT_RANGE_PM_500_MV))
+            .Items.Add(New MyList("+/- 800 mV", INPUT_RANGE_PM_800_MV))
+            .Items.Add(New MyList("+/- 1 V", INPUT_RANGE_PM_1_V))
+            .Items.Add(New MyList("+/- 2 V", INPUT_RANGE_PM_2_V))
+            .Items.Add(New MyList("+/- 4 V", INPUT_RANGE_PM_4_V))
+            .Items.Add(New MyList("+/- 5 V", INPUT_RANGE_PM_5_V))
+            .Items.Add(New MyList("+/- 8 V", INPUT_RANGE_PM_8_V))
+            .Items.Add(New MyList("+/- 10 V", INPUT_RANGE_PM_10_V))
+            .Items.Add(New MyList("+/- 20 V", INPUT_RANGE_PM_20_V))
+            .SelectedIndex = 1
+        End With
         InputRangeIdChA = INPUT_RANGE_PM_50_MV
 
-
-        Combo2.Items.Add(New VB6.ListBoxItem("+/- 40 mV", INPUT_RANGE_PM_40_MV))
-        Combo2.Items.Add(New VB6.ListBoxItem("+/- 50 mV", INPUT_RANGE_PM_50_MV))
-        Combo2.Items.Add(New VB6.ListBoxItem("+/- 80 mV", INPUT_RANGE_PM_80_MV))
-        Combo2.Items.Add(New VB6.ListBoxItem("+/- 100 mV", INPUT_RANGE_PM_100_MV))
-        Combo2.Items.Add(New VB6.ListBoxItem("+/- 200 mV", INPUT_RANGE_PM_200_MV))
-        Combo2.Items.Add(New VB6.ListBoxItem("+/- 400 mV", INPUT_RANGE_PM_400_MV))
-        Combo2.Items.Add(New VB6.ListBoxItem("+/- 500 mV", INPUT_RANGE_PM_500_MV))
-        Combo2.Items.Add(New VB6.ListBoxItem("+/- 800 mV", INPUT_RANGE_PM_800_MV))
-        Combo2.Items.Add(New VB6.ListBoxItem("+/- 1 V", INPUT_RANGE_PM_1_V))
-        Combo2.Items.Add(New VB6.ListBoxItem("+/- 2 V", INPUT_RANGE_PM_2_V))
-        Combo2.Items.Add(New VB6.ListBoxItem("+/- 4 V", INPUT_RANGE_PM_4_V))
-        Combo2.Items.Add(New VB6.ListBoxItem("+/- 5 V", INPUT_RANGE_PM_5_V))
-        Combo2.Items.Add(New VB6.ListBoxItem("+/- 8 V", INPUT_RANGE_PM_8_V))
-        Combo2.Items.Add(New VB6.ListBoxItem("+/- 10 V", INPUT_RANGE_PM_10_V))
-        Combo2.Items.Add(New VB6.ListBoxItem("+/- 20 V", INPUT_RANGE_PM_20_V))
+        With Combo2
+            .Items.Add(New MyList("+/- 40 mV", INPUT_RANGE_PM_40_MV))
+            .Items.Add(New MyList("+/- 50 mV", INPUT_RANGE_PM_50_MV))
+            .Items.Add(New MyList("+/- 80 mV", INPUT_RANGE_PM_80_MV))
+            .Items.Add(New MyList("+/- 100 mV", INPUT_RANGE_PM_100_MV))
+            .Items.Add(New MyList("+/- 200 mV", INPUT_RANGE_PM_200_MV))
+            .Items.Add(New MyList("+/- 400 mV", INPUT_RANGE_PM_400_MV))
+            .Items.Add(New MyList("+/- 500 mV", INPUT_RANGE_PM_500_MV))
+            .Items.Add(New MyList("+/- 800 mV", INPUT_RANGE_PM_800_MV))
+            .Items.Add(New MyList("+/- 1 V", INPUT_RANGE_PM_1_V))
+            .Items.Add(New MyList("+/- 2 V", INPUT_RANGE_PM_2_V))
+            .Items.Add(New MyList("+/- 4 V", INPUT_RANGE_PM_4_V))
+            .Items.Add(New MyList("+/- 5 V", INPUT_RANGE_PM_5_V))
+            .Items.Add(New MyList("+/- 8 V", INPUT_RANGE_PM_8_V))
+            .Items.Add(New MyList("+/- 10 V", INPUT_RANGE_PM_10_V))
+            .Items.Add(New MyList("+/- 20 V", INPUT_RANGE_PM_20_V))
+            .SelectedIndex = 1
+        End With
         InputRangeIdChB = INPUT_RANGE_PM_50_MV
+
+
+
+        'Combo1.Items.Add(New VB6.ListBoxItem("+/- 40 mV", INPUT_RANGE_PM_40_MV))
+        'Combo1.Items.Add(New VB6.ListBoxItem("+/- 50 mV", INPUT_RANGE_PM_50_MV))
+        'Combo1.Items.Add(New VB6.ListBoxItem("+/- 80 mV", INPUT_RANGE_PM_80_MV))
+        'Combo1.Items.Add(New VB6.ListBoxItem("+/- 100 mV", INPUT_RANGE_PM_100_MV))
+        'Combo1.Items.Add(New VB6.ListBoxItem("+/- 200 mV", INPUT_RANGE_PM_200_MV))
+        'Combo1.Items.Add(New VB6.ListBoxItem("+/- 400 mV", INPUT_RANGE_PM_400_MV))
+        'Combo1.Items.Add(New VB6.ListBoxItem("+/- 500 mV", INPUT_RANGE_PM_500_MV))
+        'Combo1.Items.Add(New VB6.ListBoxItem("+/- 800 mV", INPUT_RANGE_PM_800_MV))
+        'Combo1.Items.Add(New VB6.ListBoxItem("+/- 1 V", INPUT_RANGE_PM_1_V))
+        'Combo1.Items.Add(New VB6.ListBoxItem("+/- 2 V", INPUT_RANGE_PM_2_V))
+        'Combo1.Items.Add(New VB6.ListBoxItem("+/- 4 V", INPUT_RANGE_PM_4_V))
+        'Combo1.Items.Add(New VB6.ListBoxItem("+/- 5 V", INPUT_RANGE_PM_5_V))
+        'Combo1.Items.Add(New VB6.ListBoxItem("+/- 8 V", INPUT_RANGE_PM_8_V))
+        'Combo1.Items.Add(New VB6.ListBoxItem("+/- 10 V", INPUT_RANGE_PM_10_V))
+        'Combo1.Items.Add(New VB6.ListBoxItem("+/- 20 V", INPUT_RANGE_PM_20_V))
+        'InputRangeIdChA = INPUT_RANGE_PM_50_MV
+
+
+        'Combo2.Items.Add(New VB6.ListBoxItem("+/- 40 mV", INPUT_RANGE_PM_40_MV))
+        'Combo2.Items.Add(New VB6.ListBoxItem("+/- 50 mV", INPUT_RANGE_PM_50_MV))
+        'Combo2.Items.Add(New VB6.ListBoxItem("+/- 80 mV", INPUT_RANGE_PM_80_MV))
+        'Combo2.Items.Add(New VB6.ListBoxItem("+/- 100 mV", INPUT_RANGE_PM_100_MV))
+        'Combo2.Items.Add(New VB6.ListBoxItem("+/- 200 mV", INPUT_RANGE_PM_200_MV))
+        'Combo2.Items.Add(New VB6.ListBoxItem("+/- 400 mV", INPUT_RANGE_PM_400_MV))
+        'Combo2.Items.Add(New VB6.ListBoxItem("+/- 500 mV", INPUT_RANGE_PM_500_MV))
+        'Combo2.Items.Add(New VB6.ListBoxItem("+/- 800 mV", INPUT_RANGE_PM_800_MV))
+        'Combo2.Items.Add(New VB6.ListBoxItem("+/- 1 V", INPUT_RANGE_PM_1_V))
+        'Combo2.Items.Add(New VB6.ListBoxItem("+/- 2 V", INPUT_RANGE_PM_2_V))
+        'Combo2.Items.Add(New VB6.ListBoxItem("+/- 4 V", INPUT_RANGE_PM_4_V))
+        'Combo2.Items.Add(New VB6.ListBoxItem("+/- 5 V", INPUT_RANGE_PM_5_V))
+        'Combo2.Items.Add(New VB6.ListBoxItem("+/- 8 V", INPUT_RANGE_PM_8_V))
+        'Combo2.Items.Add(New VB6.ListBoxItem("+/- 10 V", INPUT_RANGE_PM_10_V))
+        'Combo2.Items.Add(New VB6.ListBoxItem("+/- 20 V", INPUT_RANGE_PM_20_V))
+        'InputRangeIdChB = INPUT_RANGE_PM_50_MV
 
         ' Set defaults
         Combo1.SelectedIndex = 1
@@ -1170,7 +1164,7 @@ Friend Class PrMF '
                         ' Print #33, Str(sampleInRecord / 5000000) & " sec." & vbTab & Format(sampleVolts, "0.0000") & " V"
                         ' Print #33, Str(sampleInRecord) & vbTab & Format(sampleVolts, "0.0000")
 
-                        PrintLine(44, Str(sampleInRecord / samplesPerSec) & " sec." & vbTab & VB6.Format(sampleVolts, "0.000000") & " V")
+                        PrintLine(44, Str(sampleInRecord / samplesPerSec) & " sec." & vbTab & Format(sampleVolts, "0.000000") & " V")
 
 
                     Next sampleInRecord
@@ -1258,10 +1252,10 @@ Friend Class PrMF '
             ' Save picture
             ' SavePicture PictureBox.Image, "C:\Example.bmp"
             'UPGRADE_WARNING: SavePicture was upgraded to System.Drawing.Image.Save and has a new behavior. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="9B7D5ADD-D8FE-4819-A36C-6DEDAF088CC7"'
-            PictureBox.Image.Save(ImagePath & "Run" & VB6.Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".raw.bmp")
+            PictureBox.Image.Save(ImagePath & "Run" & Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".raw.bmp")
             ' Convert from bmp to jpeg
             ' BmpToJpeg "C:\Example" & ".bmp", "C:\Example" & ".jpg", 100
-            BmpToJpeg(ImagePath & "Run" & VB6.Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".raw.bmp", ImagePath & "Run" & VB6.Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".raw.jpg", 100)
+            BmpToJpeg(ImagePath & "Run" & Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".raw.bmp", ImagePath & "Run" & Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".raw.jpg", 100)
 
 
 
@@ -1288,7 +1282,7 @@ Friend Class PrMF '
             ' For i = LBound(xData, 2) To UBound(xData, 2)
             For i = 0 To preTriggerSamples + postTriggerSamples - 1
                 xData(channel, i) = xData(channel, i) / recordsPerCapture
-                PrintLine(33, Str(i / samplesPerSec) & " sec." & vbTab & VB6.Format(xData(channel, i), "0.000000") & " V")
+                PrintLine(33, Str(i / samplesPerSec) & " sec." & vbTab & Format(xData(channel, i), "0.000000") & " V")
                 ' xData(channel, i) = xData(channel, i) - xDataRef(channel, i)
             Next i
         Next channel
@@ -1481,7 +1475,7 @@ Friend Class PrMF '
         For channel = 0 To channelsPerBoard - 1
             ' For i = LBound(xData, 2) To UBound(xData, 2)
             For i = 0 To preTriggerSamples + postTriggerSamples - 1
-                PrintLine(33, Str(i / samplesPerSec) & " sec." & vbTab & VB6.Format(xDataRef(channel + 4, i), "0.000000") & " V")
+                PrintLine(33, Str(i / samplesPerSec) & " sec." & vbTab & Format(xDataRef(channel + 4, i), "0.000000") & " V")
                 ' xData(channel, i) = xData(channel, i) - xDataRef(channel, i)
             Next i
         Next channel
@@ -1490,7 +1484,7 @@ Friend Class PrMF '
         For channel = 0 To channelsPerBoard - 1
             ' For i = LBound(xData, 2) To UBound(xData, 2)
             For i = 0 To preTriggerSamples + postTriggerSamples - 1
-                PrintLine(33, Str(i / samplesPerSec) & " sec." & vbTab & VB6.Format(xData(channel + 4, i), "0.000000") & " V")
+                PrintLine(33, Str(i / samplesPerSec) & " sec." & vbTab & Format(xData(channel + 4, i), "0.000000") & " V")
                 ' xData(channel, i) = xData(channel, i) - xDataRef(channel, i)
             Next i
         Next channel
@@ -1503,7 +1497,7 @@ Friend Class PrMF '
 
         FileClose(44)
         FileClose(33)
-        FileCopy(DataFileName, ImagePath & "Run_" & VB6.Format(iiRun, "000000") & ".txt")
+        FileCopy(DataFileName, ImagePath & "Run_" & Format(iiRun, "000000") & ".txt")
 
 
 
@@ -1926,7 +1920,7 @@ cmdGetWFMErr1:
                         ' Print #33, Str(sampleInRecord / 5000000) & " sec." & vbTab & Format(sampleVolts, "0.0000") & " V"
                         ' Print #33, Str(sampleInRecord) & vbTab & Format(sampleVolts, "0.0000")
 
-                        PrintLine(44, Str(sampleInRecord / samplesPerSec) & " sec." & vbTab & VB6.Format(sampleVolts, "0.000000") & " V")
+                        PrintLine(44, Str(sampleInRecord / samplesPerSec) & " sec." & vbTab & Format(sampleVolts, "0.000000") & " V")
 
                     Next sampleInRecord
 
@@ -1995,10 +1989,10 @@ cmdGetWFMErr1:
             ' Save picture
             ' SavePicture PictureBox.Image, "C:\Example.bmp"
             'UPGRADE_WARNING: SavePicture was upgraded to System.Drawing.Image.Save and has a new behavior. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="9B7D5ADD-D8FE-4819-A36C-6DEDAF088CC7"'
-            PictureBox.Image.Save(ImagePath & "Run" & VB6.Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".noise.bmp")
+            PictureBox.Image.Save(ImagePath & "Run" & Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".noise.bmp")
             ' Convert from bmp to jpeg
             ' BmpToJpeg "C:\Example" & ".bmp", "C:\Example" & ".jpg", 100
-            BmpToJpeg(ImagePath & "Run" & VB6.Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".noise.bmp", ImagePath & "Run" & VB6.Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".noise.jpg", 100)
+            BmpToJpeg(ImagePath & "Run" & Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".noise.bmp", ImagePath & "Run" & Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".noise.jpg", 100)
 
             ' If the abort button was pressed, then stop reading records
 
@@ -2027,7 +2021,7 @@ cmdGetWFMErr1:
             For i = 0 To preTriggerSamples + postTriggerSamples - 1
                 'For i = LBound(xDataRef, 2) To UBound(xDataRef, 2)
                 xDataRef(channel, i) = xDataRef(channel, i) / recordsPerCapture
-                PrintLine(33, Str(i / samplesPerSec) & " sec." & vbTab & VB6.Format(xDataRef(channel, i), "0.000000") & " V")
+                PrintLine(33, Str(i / samplesPerSec) & " sec." & vbTab & Format(xDataRef(channel, i), "0.000000") & " V")
             Next i
         Next channel
 
@@ -2504,9 +2498,9 @@ cmdGetWFMErr1:
 
     Private Sub TakeData()
 
-        RunNumL.Text = VB6.Format(iiRun, "#0000") & "_" & VB6.Format(IPrM, "00")
-        DataFileName = DataFilePath & "Run_" & VB6.Format(iiRun, "000000") & "_" & VB6.Format(IPrM, "00") & ".txt"
-        AllTracesFileName = AllTracesPath & "Run_" & VB6.Format(iiRun, "000000") & "_" & VB6.Format(IPrM, "00") & ".txt"
+        RunNumL.Text = Format(iiRun, "#0000") & "_" & Format(IPrM, "00")
+        DataFileName = DataFilePath & "Run_" & Format(iiRun, "000000") & "_" & Format(IPrM, "00") & ".txt"
+        AllTracesFileName = AllTracesPath & "Run_" & Format(iiRun, "000000") & "_" & Format(IPrM, "00") & ".txt"
         RunFileL.Text = DataFileName
 
         PulserWait.Interval = 60000
@@ -2761,7 +2755,7 @@ cmdGetWFMErr1:
         Dim yRange As Integer
         Dim sampleZero As Object
         Dim sampleRange As Integer
-        Dim xOld As Object
+        Dim xOld As Object = 0
         Dim yOld As Integer
         Dim color As System.Drawing.Color
 
@@ -2862,14 +2856,12 @@ cmdGetWFMErr1:
         Dim i As Object
         Dim channel As Object
 
-        Dim sampleInRecord As Integer
         Dim xLeft, xRight As Object
         Dim xRange As Integer
         Dim yBottom, yTop, yCenter As Object
         Dim yRange As Integer
-        Dim sampleZero As Integer
         Dim sampleRange As Single
-        Dim xOld As Object
+        Dim xOld As Object = 0
         Dim yOld As Single
         'Dim color As Integer
 
@@ -2961,4 +2953,52 @@ cmdGetWFMErr1:
 
 
 
+    Private Sub Combo1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Combo1.SelectedIndexChanged
+        ' InputRangeIdChA = CInt(VB6.GetItemString(Combo1, Combo1.SelectedIndex))
+        'InputRangeIdChA = VB6.GetItemData(Combo1, Combo1.SelectedIndex)
+
+        InputRangeIdChA = Combo1.Items(Combo1.SelectedIndex).ItemData
+        InputRangeIdChB = INPUT_RANGE_PM_50_MV
+
+        'Dim mList As MyList
+        'mList = Combo1.Items(Combo1.SelectedIndex)
+        'Label1.Text = mList.ItemData & "  " & mList.Name
+
+        Dim systemID As Object
+        Dim boardID As Integer
+        Dim boardHandle As Integer
+        'UPGRADE_WARNING: Couldn't resolve default property of object systemID. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
+        systemID = 1
+        boardID = 1
+        'UPGRADE_WARNING: Couldn't resolve default property of object systemID. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
+        boardHandle = AlazarGetBoardBySystemID(systemID, boardID)
+        Dim result As Boolean
+        result = ConfigureBoard(boardHandle)
+        If (result <> True) Then
+            Exit Sub
+        End If
+
+    End Sub
+
+    Private Sub Combo2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Combo2.SelectedIndexChanged
+        InputRangeIdChB = Combo2.Items(Combo2.SelectedIndex).ItemData
+
+        'Dim mList As MyList
+        'mList = Combo1.Items(Combo1.SelectedIndex)
+        'Label1.Text = mList.ItemData & "  " & mList.Name
+
+        Dim systemID As Object
+        Dim boardID As Integer
+        Dim boardHandle As Integer
+        'UPGRADE_WARNING: Couldn't resolve default property of object systemID. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
+        systemID = 1
+        boardID = 1
+        'UPGRADE_WARNING: Couldn't resolve default property of object systemID. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
+        boardHandle = AlazarGetBoardBySystemID(systemID, boardID)
+        Dim result As Boolean
+        result = ConfigureBoard(boardHandle)
+        If (result <> True) Then
+            Exit Sub
+        End If
+    End Sub
 End Class

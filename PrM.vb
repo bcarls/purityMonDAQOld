@@ -93,9 +93,9 @@ Module PrM
 		'UPGRADE_WARNING: Couldn't resolve default property of object XBASE. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object IXTIME. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object XMAX. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "Diode Peak,Time,Baseline," & VB6.Format(XMAX, "0.000e-00") & "," & VB6.Format(IXTIME, "0.000e-00") & "," & VB6.Format(XBASE, "0.000e-00"))
+        PrintLine(7, "Diode Peak,Time,Baseline," & Format(XMAX, "0.000e-00") & "," & Format(IXTIME, "0.000e-00") & "," & Format(XBASE, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object IXTIME. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrMF.List1.Items.Add("Diode Time = " & VB6.Format(IXTIME, "0.000e-00"))
+        PrMF.List1.Items.Add("Diode Time = " & Format(IXTIME, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object IXTIME. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object DiodeTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		DiodeTime = IXTIME
@@ -192,13 +192,13 @@ Module PrM
 		'UPGRADE_WARNING: Couldn't resolve default property of object XBASE. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object IXTIME. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object XMAX. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "Cathode Peak,Time,Baseline," & VB6.Format(XMAX, "0.000e-00") & "," & VB6.Format(IXTIME, "0.000e-00") & "," & VB6.Format(XBASE, "0.000e-00"))
+        PrintLine(7, "Cathode Peak,Time,Baseline," & Format(XMAX, "0.000e-00") & "," & Format(IXTIME, "0.000e-00") & "," & Format(XBASE, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object XMAX. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrMF.List1.Items.Add("Cathode Peak = " & VB6.Format(XMAX, "0.000e-00"))
+        PrMF.List1.Items.Add("Cathode Peak = " & Format(XMAX, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object IXTIME. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrMF.List1.Items.Add("Cathode Time = " & VB6.Format(IXTIME, "0.000e-00"))
+        PrMF.List1.Items.Add("Cathode Time = " & Format(IXTIME, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object XBASE. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrMF.List1.Items.Add("Cathode Baseline = " & VB6.Format(XBASE, "0.000e-00"))
+        PrMF.List1.Items.Add("Cathode Baseline = " & Format(XBASE, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object IXTIME. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object CatTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		CatTime = IXTIME
@@ -348,15 +348,15 @@ Module PrM
 		'UPGRADE_WARNING: Couldn't resolve default property of object XBASE. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object IXTIME. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object XMAX. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "Anode Peak,Time,Baseline,Rise," & VB6.Format(XMAX, "0.000e-00") & "," & VB6.Format(IXTIME, "0.000e-00") & "," & VB6.Format(XBASE, "0.000e-00") & "," & VB6.Format(xrise, "0.000e-00"))
+        PrintLine(7, "Anode Peak,Time,Baseline,Rise," & Format(XMAX, "0.000e-00") & "," & Format(IXTIME, "0.000e-00") & "," & Format(XBASE, "0.000e-00") & "," & Format(xrise, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object XMAX. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrMF.List2.Items.Add("Anode Peak = " & VB6.Format(XMAX, "0.000e-00"))
+        PrMF.List2.Items.Add("Anode Peak = " & Format(XMAX, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object IXTIME. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrMF.List2.Items.Add("Anode Time = " & VB6.Format(IXTIME, "0.000e-00"))
+        PrMF.List2.Items.Add("Anode Time = " & Format(IXTIME, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object XBASE. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrMF.List2.Items.Add("Anode Baseline = " & VB6.Format(XBASE, "0.000e-00"))
+        PrMF.List2.Items.Add("Anode Baseline = " & Format(XBASE, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object xrise. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrMF.List2.Items.Add("Anode Rise = " & VB6.Format(xrise, "0.000e-00"))
+        PrMF.List2.Items.Add("Anode Rise = " & Format(xrise, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object xrise. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoRise. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		AnoRise = xrise
@@ -419,24 +419,24 @@ Module PrM
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoTrue. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoF. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object Cathf. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "Cath Factor,Anode Factor,Anode True, Cathode True,LifeTime," & VB6.Format(Cathf, "0.000e-00") & "," & VB6.Format(AnoF, "0.000e-00") & "," & VB6.Format(AnoTrue, "0.000e-00") & "," & VB6.Format(CatTrue, "0.000e-00") & "," & VB6.Format(LifeTime, "0.000e-00"))
+        PrintLine(7, "Cath Factor,Anode Factor,Anode True, Cathode True,LifeTime," & Format(Cathf, "0.000e-00") & "," & Format(AnoF, "0.000e-00") & "," & Format(AnoTrue, "0.000e-00") & "," & Format(CatTrue, "0.000e-00") & "," & Format(LifeTime, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object DiodePeak. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object LifeTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object CatTrue. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoTrue. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoF. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object Cathf. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(77, "Cath Factor,Anode Factor,Anode True, Cathode True,LifeTime,Diode Peak," & VB6.Format(Cathf, "0.000e-00") & "," & VB6.Format(AnoF, "0.000e-00") & "," & VB6.Format(AnoTrue, "0.000e-00") & "," & VB6.Format(CatTrue, "0.000e-00") & "," & VB6.Format(LifeTime, "0.000e-00") & "," & VB6.Format(DiodePeak, "0.000e-00"))
+        PrintLine(77, "Cath Factor,Anode Factor,Anode True, Cathode True,LifeTime,Diode Peak," & Format(Cathf, "0.000e-00") & "," & Format(AnoF, "0.000e-00") & "," & Format(AnoTrue, "0.000e-00") & "," & Format(CatTrue, "0.000e-00") & "," & Format(LifeTime, "0.000e-00") & "," & Format(DiodePeak, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object Cathf. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrMF.List2.Items.Add("Cath Factor = " & VB6.Format(Cathf, "0.000e-00"))
+        PrMF.List2.Items.Add("Cath Factor = " & Format(Cathf, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoF. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrMF.List2.Items.Add("Anode Factor = " & VB6.Format(AnoF, "0.000e-00"))
+        PrMF.List2.Items.Add("Anode Factor = " & Format(AnoF, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoTrue. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrMF.List2.Items.Add("Anode True = " & VB6.Format(AnoTrue, "0.000e-00"))
+        PrMF.List2.Items.Add("Anode True = " & Format(AnoTrue, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object CatTrue. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrMF.List2.Items.Add("Cathode True = " & VB6.Format(CatTrue, "0.000e-00"))
+        PrMF.List2.Items.Add("Cathode True = " & Format(CatTrue, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object LifeTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrMF.List2.Items.Add("LifeTime = " & VB6.Format(LifeTime, "0.000e-00"))
+        PrMF.List2.Items.Add("LifeTime = " & Format(LifeTime, "0.000e-00"))
 		On Error GoTo 0
 		FileClose(7)
 		FileClose(77)
@@ -444,66 +444,66 @@ Module PrM
 		'Dim DiodePeak, DiodeTime, DiodeBase, CatTime, AnoRise
 		On Error GoTo LocalWrite
 		'    Open LogPath & "Run" & iiRun & "." & iiFile & ".LogData.csv" For Output As #7
-		FileOpen(7, LogPath & "Run" & VB6.Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".LogData.csv", OpenMode.Output)
+        FileOpen(7, LogPath & "Run" & Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".LogData.csv", OpenMode.Output)
 		On Error GoTo 0
 		PrintLine(7, "[Data]")
 		PrintLine(7, "Tagname,TimeStamp,Value")
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		zztime = VB6.Format(TimeOfDay, "hh:mm:ss")
+        zztime = Format(TimeOfDay, "hh:mm:ss")
 		'UPGRADE_WARNING: Couldn't resolve default property of object DiodePeak. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_DIODEPEAK_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(DiodePeak, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_DIODEPEAK_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(DiodePeak, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object DiodeTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_DIODETIME_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(DiodeTime, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_DIODETIME_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(DiodeTime, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object DiodeBase. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_DIODEBASE_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(DiodeBase, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_DIODEBASE_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(DiodeBase, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object CatPeak. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_CATHPEAK_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(CatPeak, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_CATHPEAK_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(CatPeak, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object CatTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_CATHTIME_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(CatTime, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_CATHTIME_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(CatTime, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object CatBase. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_CATHBASE_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(CatBase, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_CATHBASE_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(CatBase, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoPeak. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_ANODEPEAK_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(AnoPeak, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_ANODEPEAK_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(AnoPeak, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_ANODETIME_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(AnoTime, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_ANODETIME_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(AnoTime, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoBase. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_ANODEBASE_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(AnoBase, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_ANODEBASE_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(AnoBase, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoRise. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_ANODERISE_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(AnoRise, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_ANODERISE_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(AnoRise, "0.000e-00"))
 		
 		'UPGRADE_WARNING: Couldn't resolve default property of object Cathf. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_CATHFACTOR_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(Cathf, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_CATHFACTOR_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(Cathf, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoF. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_ANODEFACTOR_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(AnoF, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_ANODEFACTOR_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(AnoF, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoTrue. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_ANODETRUE_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(AnoTrue, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_ANODETRUE_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(AnoTrue, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object CatTrue. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_CATHTRUE_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(CatTrue, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_CATHTRUE_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(CatTrue, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object LifeTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_LIFETIME_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(LifeTime, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_LIFETIME_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(LifeTime, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object LifeTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		If LifeTime > 0 Then
 			'UPGRADE_WARNING: Couldn't resolve default property of object LifeTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 			'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-			PrintLine(7, "LAPD.PRM_IMPURITIES_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(0.00015 / LifeTime, "0.000e-00"))
+            PrintLine(7, "LAPD.PRM_IMPURITIES_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(0.00015 / LifeTime, "0.000e-00"))
 		Else
 			'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-			PrintLine(7, "LAPD.PRM_IMPURITIES_" & IPrM & ".F_CV," & Today & " " & zztime & "," & VB6.Format(99999, "0.000e-00"))
+            PrintLine(7, "LAPD.PRM_IMPURITIES_" & IPrM & ".F_CV," & Today & " " & zztime & "," & Format(99999, "0.000e-00"))
 		End If
 		FileClose(7)
 		
@@ -532,67 +532,67 @@ LocalWrite:
 		FileClose(88)
 		
 		'    Open DataFilePath & "Run" & iiRun & "." & iiFile & ".LogData.csv" For Output As #7
-		FileOpen(7, DataFilePath & "Run" & VB6.Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".LogData.csv", OpenMode.Output)
+        FileOpen(7, DataFilePath & "Run" & Format(iiRun, "000000") & "." & IPrM & "." & iiFile & ".LogData.csv", OpenMode.Output)
 		On Error GoTo 0
 		iiFile = iiFile + 1
 		PrintLine(7, "[Data]")
 		PrintLine(7, "Tagname,TimeStamp,Value")
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		zztime = VB6.Format(TimeOfDay, "hh:mm:ss")
+        zztime = Format(TimeOfDay, "hh:mm:ss")
 		'UPGRADE_WARNING: Couldn't resolve default property of object DiodePeak. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_DIODEPEAK.F_CV," & Today & " " & zztime & "," & VB6.Format(DiodePeak, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_DIODEPEAK.F_CV," & Today & " " & zztime & "," & Format(DiodePeak, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object DiodeTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_DIODETIME.F_CV," & Today & " " & zztime & "," & VB6.Format(DiodeTime, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_DIODETIME.F_CV," & Today & " " & zztime & "," & Format(DiodeTime, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object DiodeBase. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_DIODEBASE.F_CV," & Today & " " & zztime & "," & VB6.Format(DiodeBase, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_DIODEBASE.F_CV," & Today & " " & zztime & "," & Format(DiodeBase, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object CatPeak. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_CATHPEAK.F_CV," & Today & " " & zztime & "," & VB6.Format(CatPeak, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_CATHPEAK.F_CV," & Today & " " & zztime & "," & Format(CatPeak, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object CatTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_CATHTIME.F_CV," & Today & " " & zztime & "," & VB6.Format(CatTime, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_CATHTIME.F_CV," & Today & " " & zztime & "," & Format(CatTime, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object CatBase. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_CATHBASE.F_CV," & Today & " " & zztime & "," & VB6.Format(CatBase, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_CATHBASE.F_CV," & Today & " " & zztime & "," & Format(CatBase, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoPeak. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_ANODEPEAK.F_CV," & Today & " " & zztime & "," & VB6.Format(AnoPeak, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_ANODEPEAK.F_CV," & Today & " " & zztime & "," & Format(AnoPeak, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_ANODETIME.F_CV," & Today & " " & zztime & "," & VB6.Format(AnoTime, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_ANODETIME.F_CV," & Today & " " & zztime & "," & Format(AnoTime, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoBase. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_ANODEBASE.F_CV," & Today & " " & zztime & "," & VB6.Format(AnoBase, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_ANODEBASE.F_CV," & Today & " " & zztime & "," & Format(AnoBase, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoRise. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_ANODERISE.F_CV," & Today & " " & zztime & "," & VB6.Format(AnoRise, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_ANODERISE.F_CV," & Today & " " & zztime & "," & Format(AnoRise, "0.000e-00"))
 		
 		'UPGRADE_WARNING: Couldn't resolve default property of object Cathf. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_CATHFACTOR.F_CV," & Today & " " & zztime & "," & VB6.Format(Cathf, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_CATHFACTOR.F_CV," & Today & " " & zztime & "," & Format(Cathf, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoF. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_ANODEFACTOR.F_CV," & Today & " " & zztime & "," & VB6.Format(AnoF, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_ANODEFACTOR.F_CV," & Today & " " & zztime & "," & Format(AnoF, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object AnoTrue. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_ANODETRUE.F_CV," & Today & " " & zztime & "," & VB6.Format(AnoTrue, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_ANODETRUE.F_CV," & Today & " " & zztime & "," & Format(AnoTrue, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object CatTrue. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_CATHTRUE.F_CV," & Today & " " & zztime & "," & VB6.Format(CatTrue, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_CATHTRUE.F_CV," & Today & " " & zztime & "," & Format(CatTrue, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object LifeTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-		PrintLine(7, "LAPD.PRM_LIFETIME.F_CV," & Today & " " & zztime & "," & VB6.Format(LifeTime, "0.000e-00"))
+        PrintLine(7, "LAPD.PRM_LIFETIME.F_CV," & Today & " " & zztime & "," & Format(LifeTime, "0.000e-00"))
 		'UPGRADE_WARNING: Couldn't resolve default property of object LifeTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 		If LifeTime > 0 Then
 			'UPGRADE_WARNING: Couldn't resolve default property of object LifeTime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
 			'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-			PrintLine(7, "LAPD.PRM_IMPURITIES.F_CV," & Today & " " & zztime & "," & VB6.Format(0.00015 / LifeTime, "0.000e-00"))
+            PrintLine(7, "LAPD.PRM_IMPURITIES.F_CV," & Today & " " & zztime & "," & Format(0.00015 / LifeTime, "0.000e-00"))
 		Else
 			'UPGRADE_WARNING: Couldn't resolve default property of object zztime. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'
-			PrintLine(7, "LAPD.PRM_IMPURITIES.F_CV," & Today & " " & zztime & "," & VB6.Format(99999, "0.000e-00"))
+            PrintLine(7, "LAPD.PRM_IMPURITIES.F_CV," & Today & " " & zztime & "," & Format(99999, "0.000e-00"))
 		End If
 		
 		FileClose(7)

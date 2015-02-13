@@ -127,6 +127,7 @@
     <Compile Include="ATSApiVB.vb">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="MyList.vb" />
     <Compile Include="PrM.vb">
       <SubType>Code</SubType>
     </Compile>
